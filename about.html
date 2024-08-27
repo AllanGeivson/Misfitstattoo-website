@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MisFits Tattoo Collective</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <a href="https://www.WordPress.com" target="_blank"></a>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+</head>
+<body class="about-page">
+
+    <header class="header">
+        <nav>
+            <div class="header-content">
+                <a href="" class="logo">MisFits Tattoo Collective</a>
+                <a href="tel:+441803556432" class="phone-number">
+                    <i class="fa fa-phone"></i> +44 1803 556 432
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="products.html" target="_blank">OUR&nbsp;&nbsp;WORK</a></li>
+                    <li><a href="booking.html" target="_blank">BOOKING</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>About Us</h1>
+            <p>Get to know more about our journey, passion, and the artistry behind our tattoos.</p>
+        </div>
+    </header>
+
+    <main class="about">
+        <section class="about-content">
+            <h1>Our Story</h1>
+            <p>
+                At MisFits Tattoo Collective, we believe in the power of self-expression through ink. Founded by The Gallons, our studio is a sanctuary for those who seek to transform their ideas into unique tattoo art. With over 30 years of experience in the industry, Both artists have honed their skills in various styles, specializing in quality traditional designs
+            </p>
+            <p>
+                Our mission is to provide a welcoming environment where clients can feel comfortable and confident about their tattoos. We pride ourselves on our attention to detail and commitment to high-quality work. Every tattoo is a collaboration between the artist and the client, ensuring that each piece is not only a work of art but a meaningful expression of individuality.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="course">
+        <h1>Contact Us!</h1>
+        <a class="some" href="https://mail.google.com/mail/?view=cm&fs=1&to= misfitstattoouk@gmail.com" target="_blank">misfitstattoouk@gmail.com</a>
+        <a class="some" href="tel:+441803556432">Give Us a Call!</a>
+        <div class="social-media">
+            <a href="https://www.instagram.com/misfits_tattoo_collective/" target="_blank" class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                 <a href="https://www.facebook.com/luckycustomtattoo/?locale=en_GB" target="_blank" class="social-icon facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+        function HideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Function to show a pre-done message after email submission
+        function showPreDoneMessage() {
+            alert("Thank you for reaching out to MisFits Tattoo Collective! Your message has been received, and we will get back to you as soon as possible. Please check your email for a confirmation of receipt.");
+        }
+
+        // Attach the function to form submission
+        document.querySelector("form").addEventListener("submit", function(event) {
+            showPreDoneMessage();
+        });
+    </script>
+</body>
+</html>

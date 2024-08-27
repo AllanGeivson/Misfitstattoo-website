@@ -1,0 +1,1748 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "New Rocker", system-ui;
+}
+
+.header1 {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.505)), url(https://lh3.googleusercontent.com/p/AF1QipNFpni0ajACv3DY7L6ZGdaQGZu4zUHxkiVg7WOa=s680-w680-h510);
+
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    width: px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #710800;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: rgb(185, 0, 0);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #000000;
+    background: #af0202;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #710800;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.course h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #af0202;
+}
+
+.course a {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.course .some:hover {
+    color: #af0202;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: "New Rocker", system-ui;
+    color: #333;
+    background-color: #000000;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Product Page Styles */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+/* Booking Page Styles */
+.booking {
+    padding: 50px 20px;
+    background: rgb(0, 0, 0);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.booking h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.booking button {
+    padding: 12px;
+    border: none;
+    background-color: #af0202;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.booking button:hover {
+    background-color: #900;
+}
+
+
+/* Product Page Styles */
+.products {
+    padding: 60px 20px;
+    background: #000000;
+    text-align: center;
+}
+
+.products h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 30px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust space between products */
+}
+
+.product-item {
+    width: calc(33.333% - 40px); /* 3 items per row with gaps */
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-item h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for Product Page */
+@media(max-width: 1024px) {
+    .product-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media(max-width: 768px) {
+    .product-item {
+        width: calc(100% - 20px); /* 1 item per row */
+    }
+}
+
+
+/* About Page Styles */
+.about {
+    padding: 60px 20px;
+    background: #000000;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #c3c3c3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    padding: 40px 20px;
+    background: #000000;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px);
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item2{
+    width: calc(33.333% - 60px);
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.portfolio-item2 img {
+    width: 100%;
+    height: 70mm;
+    border-radius: 8px;
+    transition: transform 0.3s;
+
+}
+
+.portfolio-item2 p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.portfolio-item2:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item3 {
+    width: calc(33.333% - 60px);
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+.portfolio-item3 img {
+    width: 100%;
+    height: 70mm;
+    border-radius: 8px;
+    transition: transform 0.3s;
+
+}
+
+.portfolio-item3 p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.portfolio-item3:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for About Page */
+@media(max-width: 1024px) {
+    .portfolio-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media(max-width: 768px) {
+    .portfolio-item {
+        width: calc(100% - 20px); /* 1 item per row */
+    }
+}
+
+
+
+.hero-btn:hover {
+    border: 1px solid #000000;
+    background: #af0202;
+    transition: 1s;
+    font-family: "New Rocker" system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 62px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #850900;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* Course Styles */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #af0202;
+}
+
+a {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.some:hover {
+    color: #af0202;
+    transition: 1s;
+}
+
+/* Additional Styles for About, Products, and Booking Pages */
+.about-content, .products, .booking {
+    font-family: "New Rocker", system-ui; /* Apply "New Rocker" font to these sections */
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Where to Find Us Section */
+.find-us {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.find-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #af0202;
+}
+
+.find-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #c3c3c3;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media .social-icon {
+    font-size: 24px;
+    color: #af0202; /* Adjust this color to make the icon stand out on a white background */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-icon i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-media .social-icon:hover {
+    color: #333; /* Change to a different color on hover if needed */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+.lightbox-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #bbb;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#backToTop:hover {
+    background-color: #af0202;
+}
+
+.feedback {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #af0202;
+    border-radius: 5px;
+}
+
+/* Ensure the footer section fits well on mobile */
+footer.course {
+    padding: 1em;
+    text-align: center;
+    background-color: #040404;
+    color: #fff;
+}
+
+footer.course h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+footer.course a.some {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+footer.course a.some:hover {
+    text-decoration: underline;
+}
+
+/* Social media icons */
+footer.course .social-media {
+    margin-top: 1em;
+}
+
+footer.course .social-media .social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    footer.course h1 {
+        font-size: 1.2em;
+    }
+
+    footer.course a.some {
+        font-size: 1em;
+    }
+
+    footer.course .social-media .social-icon {
+        font-size: 1.2em;
+    }
+}
+
+/* Ensure links do not overflow */
+footer.course a {
+    word-wrap: break-word;
+}
+
+/* Social media icons */
+footer.course .social-media .social-icon {
+    color: #fff; /* Default color */
+    font-size: 1.5em; /* Adjust size as needed */
+    margin: 0 0.5em; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+footer.course .social-media .social-icon:hover {
+    color: red; /* Red color on hover */
+}
+
+.header {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* or your preferred background color */
+}
+
+.logo {
+    font-family: 'New Rocker', ;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.phone-number {
+    display: block;
+    font-family: 'New Rocker', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px; /* Adds space between the logo and phone number */
+}
+
+.phone-number i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.phone-number:hover {
+    color: #ff0000; /* Red color on hover */
+    text-decoration: underline;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; /* Stack logo and phone number vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+.phone-number {
+    font-family: 'New Rocker',;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px; /* Adds space between the logo and phone number */
+}
+
+.phone-number i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.phone-number:hover {
+    color: #ff0000; /* Red color on hover */
+    text-decoration: underline;
+}
+.products {
+    padding: 20px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+
+.product-item {
+    flex: 1;
+    min-width: 250px; /* Adjust based on your layout */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile Menu Icon Styles */
+.fa-bars {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+}
+
+.fa-times {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.text-box {
+    padding: 20px;
+    text-align: center;
+}
+
+.booking {
+    padding: 20px;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking label {
+    font-weight: bold;
+}
+
+.booking input, .booking textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.hero-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #ff0000; /* Red background on hover */
+}
+
+/* Footer Styles */
+.course {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.some {
+    color: #fff;
+    text-decoration: none;
+}
+
+.some:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: #ff0000; /* Red color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .phone-number {
+        font-size: 16px;
+    }
+}
+
+.products-page .header {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.505)), url('https://i.ibb.co/bvf3MVY/1234.webp')
+}
+
+.about-page .header {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.505)), url('https://i.ibb.co/spSSLV0/0e3295d3-9fe8-4dc9-aa42-0e33d47b1e62-1.jpg');
+    }
+
+    /* Base styles for footer elements */
+.course {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.course .some {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.course .social-media {
+    margin-top: 10px;
+}
+
+.course .social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.course .social-icon:hover {
+    color: #ddd;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Rocker", system-ui;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+
+/* Header Styles */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.534)), url('https://i.ibb.co/r2DFcCW/123.webp') center/cover no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-family: 'New Rocker';
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.phone-number {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.phone-number i {
+    margin-right: 8px;
+}
+
+.phone-number:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #710800;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.fa-bars, .fa-times {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Navigation Styles */
+@media(max-width: 700px) {
+    .nav-links {
+        position: absolute;
+        background: #850900;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-box h1 {
+        font-size: 62px;
+    }
+}
+
+/* Hero Section Styles */
+.text-box {
+    width: 90%;
+    color: rgb(185, 0, 0);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 0px solid rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 13px;
+    background: black;
+    cursor: pointer;
+    transition: background 1s, border 1s;
+}
+
+.hero-btn:hover {
+    border: 1px solid #000;
+    background: #af0202;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Course Page Styles */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+    background-color: #000;
+}
+
+.course h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #af0202;
+}
+
+.course a {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.course .some:hover {
+    color: #af0202;
+    transition: 1s;
+}
+
+/* Products Page Styles */
+.products {
+    padding: 60px 20px;
+    background: #000;
+    text-align: center;
+}
+
+.products h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 30px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    flex: 1;
+    min-width: 250px;
+    margin: 0;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(114, 0, 0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-item h2 {
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    margin: 15px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for Products Page */
+@media(max-width: 1024px) {
+    .product-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 768px) {
+    .product-item {
+        width: calc(100% - 20px);
+    }
+}
+
+/* About Page Styles */
+.about {
+    padding: 60px 20px;
+    background: #000;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #c3c3c3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Styles */
+.portfolio {
+    padding: 40px 20px;
+    background: #000;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    color: #af0202;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item, .portfolio-item2, .portfolio-item3 {
+    width: calc(33.333% - 20px);
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-item img, .portfolio-item2 img, .portfolio-item3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item p, .portfolio-item2 p, .portfolio-item3 p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.portfolio-item:hover img, .portfolio-item2:hover img, .portfolio-item3:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for Portfolio Page */
+@media(max-width: 1024px) {
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 768px) {
+    .portfolio-item {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Booking Page Styles */
+.booking {
+    padding: 50px 20px;
+    background: #000;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #af0202;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking form label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.booking form input, .booking form select, .booking form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+}
+
+.booking form input[type="submit"] {
+    background: #af0202;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.booking form input[type="submit"]:hover {
+    background: #850900;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #af0202;
+}
+.booking-page .header {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.505)), url(https://lh3.googleusercontent.com/p/AF1QipNFpni0ajACv3DY7L6ZGdaQGZu4zUHxkiVg7WOa=s680-w680-h510);
+}
+
+/* Booking Page Styles */
+.booking {
+    padding: 50px 20px;
+    background: rgb(0, 0, 0);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.booking h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure heading color is visible against dark background */
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #fff; /* Ensure label color is visible against dark background */
+}
+
+.booking input,
+.booking select,
+.booking textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background: #fff; /* Ensure input fields have a visible background */
+}
+
+.booking button {
+    padding: 12px;
+    border: none;
+    background-color: #710800;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.booking button:hover {
+    background-color: #900;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensure no margin affects layout */
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #710800;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: rgb(185, 0, 0);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    
+    padding: 12px;
+    font-size: 13px;
+    background: black;
+    cursor: pointer;
+    
+}
+
+.hero-btn:hover {
+    border: 1px solid #000000;
+    background: #af0202;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .nav-links ul li {
+        display: block;
+        padding: 15px; /* Increased padding for better touch targets */
+    }
+    .nav-links {
+        position: fixed; /* Change to fixed for overlay effect */
+        background: #710800;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px; /* Start hidden off-screen */
+        text-align: left;
+        z-index: 2;
+        transition: right 0.3s ease; /* Adjust transition for smoother effect */
+    }
+    .nav-links.open { /* New class for opening menu */
+        right: 0; /* Move menu into view */
+    }
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+.social-platforms {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-platforms h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #af0202;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 36px; /* Adjust size as needed */
+    color: rgb(255, 255, 255); /* Default color */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: red; /* Hover color */
+}
+
+.social-icon.facebook:hover {
+    color: #3b5998; /* Facebook specific hover color, if needed */
+}
+
+.social-icon.instagram:hover {
+    color: #e4405f; /* Instagram specific hover color, if needed */
+}
+
+.reviews {
+    position: relative;
+    padding: 20px;
+    background: #000000;
+ 
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* To ensure floating effect stays within bounds */
+    animation: fadeIn 1s ease-in-out; /* Animation for fading in */
+}
+
+.reviews-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Increased space above reviews */
+    color: #af0202;
+    text-align: center;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    background: #060606; /* Background color for each review */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.review:hover {
+    transform: translateY(-5px); /* Floating effect on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.review-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ddd; /* Optional: Border around picture */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Increased space for header */
+}
+
+.review-name {
+    font-weight: bold;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.review-stars {
+    color: #ffcc00; /* Color for the stars */
+}
+
+.review-stars .fa-star,
+.review-stars .fa-star-half-alt,
+.review-stars .fa-star-o {
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+.review p {
+    margin: 0;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.932)255, 255, 255;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 10px;
+    }
+    
+    .reviews h2 {
+        font-size: 20px;
+    }
+    
+    .review-pic {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .review-stars .fa-star,
+    .review-stars .fa-star-half-alt,
+    .review-stars .fa-star-o {
+        font-size: 14px;
+    }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
